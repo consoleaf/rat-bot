@@ -12,4 +12,4 @@ fastrand = "1.9.0"
 regex = "1.7.1"
 reqwest = "0.11.14"
 serenity = "0.11.5"
-tokio = "1.26.0"
+tokio = { version = "1.26.0", features = ["macros", "rt-multi-thread"] }
