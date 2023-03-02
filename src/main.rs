@@ -14,6 +14,10 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+mod commands;
+
 fn main() {
+    dotenvy::dotenv().expect("Couldn't load envvars. Is the .env file present?");
+
     println!("Hello, world!");
 }
